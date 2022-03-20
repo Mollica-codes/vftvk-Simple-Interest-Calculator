@@ -1,4 +1,63 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+}
+h1{
+    color: grey;
+    font-family: verdana;
+}
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+.subdiv {
+    display: grid;
+    grid-template-areas: 
+    "text principal principal"
+    "text rate rate_val"
+    "text years years"
+    "button button button"
+    "result result result";
+    grid-template-columns: 100px 150px 50px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 1rem;
+}
+
+#principal {
+    grid-area: principal;
+}
+#rate {
+    grid-area: rate;
+}
+#rate_val {
+    grid-area: rate_val;
+}
+#years {
+    grid-area: years;
+    width: 50px;
+}
+#btn {
+    grid-area: button;
+    width: 150px;
+    margin-top: 10px;
+}
+#result {
+    grid-area: result;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
 
 
